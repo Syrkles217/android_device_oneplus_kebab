@@ -24,6 +24,11 @@ $(call inherit-product, device/oneplus/kebab/device.mk)
 # Inherit some common derp stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
+# Xtras
+DERP_BUILDTYPE := Official
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_NAME := derp_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
